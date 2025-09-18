@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="Pt-Br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz game</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <div class="container">
         <div class="screen active" id="start-screen">
-            <h1>Quiz Time!</h1>
-            <p>
-                Teste seu conhecimento e se divirta com as questões.
-            </p>
+            <h1>Hora de Brincar</h1>
+            <p>Testes seus conhecimentos</p>
             <button id="start-btn">Start Quiz</button>
         </div>
         
@@ -21,30 +20,32 @@
                 <h2 id="question-text">Question goes here</h2>
                 <div class="quiz-info">
                     <p>
-                        Questão <span id="current-question">1</span> de <span>5</span>
+                        Questão <span id="current-question">1</span> de <span id="total-questions">5</span>
                     </p>
 
-                    <p>
-                        Pontuação: <span id="score">0</span>
-                    </p>
+                    <p>Pontuação: <span id="score">0</span></p>
                 </div>
             </div>
-        <div id="answers-container" class="answers-container">
 
+        <div id="answers-container" class="answers-container">
         </div>
+
         <div class="progress-bar">
             <div id="progress" class="progress"></div>
         </div>
         </div>
-        <div id="result-screen" class="screen">
-            <h1>Resultado do Quiz</h1>
-            <div class="result-info">
-             <p>Sua pontuação <span id="final-score">0</span> de <span>5</span></p>
 
-             <div id="resul-message">Bom Trabalho!</div>
+        <div id="result-screen" class="screen">
+            <h1>Quiz Results</h1>
+            <div class="result-info">
+             <p>Você acertou <span id="final-score">0</span> de <span id="max-score">10</span></p>
+
+             <div id="result-message">Bom Trabalho!</div>
             </div>
-<button id="restart-btn">Resetar Quiz</button>
+<button id="restart-btn">Reiniciar</button>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

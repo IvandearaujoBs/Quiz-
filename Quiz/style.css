@@ -1,4 +1,4 @@
-/* Basic Reset*/
+/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
@@ -25,7 +25,7 @@ body {
     position: relative;
 }
 
-/*SCREENS*/
+/* SCREENS */
 .screen {
     display: none;
     padding: 2rem;
@@ -34,10 +34,9 @@ body {
 
 .screen.active {
     display: block;
-
 }
 
-/*START SCREEN*/
+/* START SCREEN */
 
 #start-screen h1 {
     color: #e86a33;
@@ -52,10 +51,10 @@ body {
 }
 
 .quiz-header {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
-#quastion-text {
+#question-text {
     color: #333;
     font-size: 1.5rem;
     margin-bottom: 1rem;
@@ -66,11 +65,10 @@ body {
     display: flex;
     justify-content: space-between;
     color: #666;
-
     margin-bottom: 10px;
 }
 
-.nswers-container {
+.answers-container {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -81,7 +79,7 @@ body {
     background-color: #f8f0e5;
     color: #333;
     border: 2px solid #eadbc8;
-    border-end-end-radius: 10px;
+    border-radius: 10px;
     padding: 1rem;
     cursor: pointer;
     text-align: left;
@@ -100,7 +98,7 @@ body {
 }
 
 .answer-btn.incorrect {
-      background-color: #e6fff0;
+    background-color: #fff0f0;
     border-color: #ffbdbd;
     color: #dc3545;
 }
@@ -117,10 +115,10 @@ body {
     height: 100%;
     background-color: #e86a33;
     width: 0%;
-    transition: width 0.3 ease;
+    transition: width 0.3s ease;
 }
 
-#result-sceen h1 {
+#result-screen h1 {
     color: #e86a33;
     margin-bottom: 30px;
 }
@@ -138,7 +136,7 @@ body {
     margin-bottom: 1rem;
 }
 
-#resul-message {
+#result-message {
     font-size: 1.5rem;
     font-weight: 600;
     color: #e86a33;
@@ -152,15 +150,34 @@ button {
     padding: 15px 30px;
     font-size: 1.1rem;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #e86a33;
-
+    background-color: #d45b28;
 }
 
-/*RESPONSIVE DESIGN*/
-@media (max-width:500px){
+/* RESPONSIVE DESIGN */
+@media (max-width: 500px) {
     /*Quando atingimos 500px e abaixo implementamos os estilos abaixo*/
 
+    .screen {
+        padding: 1rem;
+    }
+
+    #start-screen h1 {
+        font-size: 2rem;
+    }
+    #question-text {
+        font-size: 1.3rem;
+    }
+
+    .answer-btn {
+        padding: 12px;
+    }
+
+    button {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
 }
