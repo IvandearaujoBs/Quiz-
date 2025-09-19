@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "build": "brunch build --production"
+  },
+  "devDependencies": {
+    "brunch": "^4.0.2"
+  }
+}
