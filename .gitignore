@@ -39,3 +39,14 @@ Thumbs.db
 .idea/
 *.sublime-project
 *.sublime-workspace
+# Dependências
+/node_modules
+
+# Pasta de Build
+/public
+
+# Logs
+npm-debug.log*
+
+# Arquivos de Sistema Operacional
+.DS_Store
